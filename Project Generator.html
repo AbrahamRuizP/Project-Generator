@@ -13,27 +13,69 @@
     <form action="https://">
         <fieldset>
             <label for="project_name"> 
-                Enter the Project Name: 
+                Enter the project name: 
                 <input type="text" name="project_name" id="project_name" minlength="1" maxlength="30" required>
             </label>
+            <!--
             <label for="number_of_files">
                 How many files do you want to create?: 
                 <input type="number" name="number_of_files" id="number_of_files" min="1" max="10" required>
             </label>
-            <label for="">
-                Enter...: 
-                <input type="text" name="" id="" required>
-            </label>
-            <label for="">
-                Enter...: 
-                <input type="text" name="" id="" required>
-            </label>
+            -->
         </fieldset>
         <fieldset>
             <label for="description">
                 Provide a description of your project:
                 <textarea id="description" name="description" rows="3" cols="30" placeholder="In this project..."></textarea>
             </label>
+        </fieldset>
+        <fieldset>
+            Select the files that you want to create:
+            <label for="files_to_genate" class="directory">
+                <ul class="second-depth">
+                    <li>
+                        <input type="checkbox" name="" checked> application
+                        <ul class="second-depth">
+                            <li><input type="checkbox" name=""> no sé</li>
+                            <li><input type="checkbox" name=""> no sé</li>
+                            <li><input type="checkbox" name=""> no sé</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" checked> db
+                        <ul class="second-depth">
+                            <li><input type="checkbox" name=""> no sé</li>
+                            <li><input type="checkbox" name=""> no sé</li>
+                            <li><input type="checkbox" name=""> no sé</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="checkbox" name=""> domain
+                        <ul class="second-depth">
+                            <li><input type="checkbox" name=""> no sé</li>
+                            <li><input type="checkbox" name=""> no sé</li>
+                            <li><input type="checkbox" name=""> no sé</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="checkbox" name=""> graph
+                        <ul class="second-depth">
+                            <li><input type="checkbox" name=""> no sé</li>
+                            <li><input type="checkbox" name=""> no sé</li>
+                            <li><input type="checkbox" name=""> no sé</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="checkbox" name=""> infrastructure
+                        <ul class="second-depth">
+                            <li><input type="checkbox" name=""> no sé</li>
+                            <li><input type="checkbox" name=""> no sé</li>
+                            <li><input type="checkbox" name=""> no sé</li>
+                        </ul>
+                    </li>
+                    <li><input type="checkbox" name=""> server</li>
+                    <li><input type="checkbox" name=""> test</li>
+                </ul>
         </fieldset>
         <div class="btn-container">
             <button class=""> <em>Generate</em> </button>
