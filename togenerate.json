@@ -1,0 +1,69 @@
+{
+    "ProjectName": "prueba42",
+    "Applications": {
+      "FileName": "miarchivo",
+      "RepositoryName": "miarchivo",
+      "DomainName": "miarchivo",
+      "ModelName": "miarchivo",
+      "FilterInputName": "miarchivo",
+      "InputName": "miarchivo",
+      "NodeConnectionName": "sas",
+      "SaveInputName": "sas",
+      "UpdateInputName": "sas",
+      "BlockName": "MiTest",
+      "Properties": [
+        {
+          "Name": "Perimeter",
+          "TypeName": "float64"
+        },
+        {
+          "Name": "Area",
+          "TypeName": "float64"
+        }
+      ]
+    },
+    "Infrastructures": null,
+    "Extension": null,
+    "Domains": {
+      "FileName": "miarchivo",
+      "BlockName": "MiTest",
+      "Properties": [
+        {
+          "Name": "Perimeter",
+          "TypeName": "float64"
+        },
+        {
+          "Name": "Area",
+          "TypeName": "float64"
+        }
+      ]
+    },
+    "Tests": {
+      "BlockName": "MiTest",
+      "Properties": [
+        {
+          "Name": "Perimeter",
+          "TypeName": "float64"
+        },
+        {
+          "Name": "Area",
+          "TypeName": "float64"
+        }
+      ]
+    },
+    "Graphs": {
+      "GraphFileName": "migraph",
+      "BlockName": "MiBloque",
+      "Properties": [
+        {
+          "Name": "Perimeter",
+          "TypeName": "float64"
+        },
+        {
+          "Name": "Area",
+          "TypeName": "float64"
+        }
+      ]
+    }
+    
+  }
