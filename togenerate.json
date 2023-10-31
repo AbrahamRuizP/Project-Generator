@@ -1,6 +1,7 @@
 
 {
     "ProjectName": "prueba42",
+
     "Applications": {
       "FileName": "miarchivo",
       "RepositoryName": "miarchivo",
@@ -23,8 +24,11 @@
         }
       ]
     },
+
     "Infrastructures": null,
+
     "Extension": null,
+
     "Domains": {
       "FileName": "miarchivo",
       "BlockName": "MiTest",
@@ -39,6 +43,7 @@
         }
       ]
     },
+
     "Tests": {
       "BlockName": "MiTest",
       "Properties": [
@@ -52,6 +57,7 @@
         }
       ]
     },
+    
     "Graphs": {
       "GraphFileName": "migraph",
       "BlockName": "MiBloque",

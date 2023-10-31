@@ -84,9 +84,12 @@ input[type="text"] {
 
 input[type="checkbox"] {
     display: inline;
-    margin: 10px 0 0 0;
     height: 20px;
     width: 20px;
+    margin: 10px 0 0 0;
+    position: relative;
+    vertical-align: middle;
+    bottom: 6px;
 }
 
 textarea {
