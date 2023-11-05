@@ -8,6 +8,25 @@
 </head>
 <body>
     <h1>Project Generator</h1>
+    
+    <div class="Starting-Page">
+        <h2>Select your project</h2>    
+        
+        <div>
+        <!-- Current Values are placeholders -->
+        <fieldset>
+            <label>Project Type</label>
+            <select id="Project-Type-Selector">
+                <option value="DDD-Arch">DDD Architecture</option>
+                <option value="Other">Other</option>
+                <option value="Other2">Other2</option>
+            </select>
+        </fieldset>
+        <button class="button">Start</button>
+        </div>
+    </div>
+
+    <div class="DDD-Arch" style="display: none;"> 
     <p>Please fill out the entries with the required information:</p>
     <h1 id="borrar"></h1>
     <form action="https://">
@@ -95,9 +114,10 @@
                 </ul>
         </fieldset>
         <div class="btn-container">
-            <button class=""> <em>Generate</em> </button>
+            <button class="button"><em>Generate</em> </button>
         </div>
     </form>
+    </div>
 
     <script src="main.js"></script>
     
