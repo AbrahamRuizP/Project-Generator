@@ -25,13 +25,14 @@ starting_page.addEventListener("click", (e) => {
     }
 })
 
-borrar.innerHTML = `Is checked is: ${cb_application.checked}`;
-cb_application.checked;
-
-
-
 
 function display_section(project_type){
     const section = document.querySelector(`.${project_type}`)
     section.style.display = "block"
 }
+
+
+// Abraham testing some weard stuff
+
+//borrar.innerHTML = `Is checked is: ${cb_application.checked}`;
+//cb_application.checked;
