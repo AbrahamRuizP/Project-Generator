@@ -71,7 +71,7 @@ body {
     place-self: center;
 }
 
-.title {
+p.title {
     font-size: 4rem; 
     margin-bottom: 0px;
     text-align: center;
