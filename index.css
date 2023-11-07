@@ -71,7 +71,7 @@ body {
     place-self: center;
 }
 
-h1, p {
+h1, h4, p {
     margin: 1em auto;
     text-align: center;
 }
