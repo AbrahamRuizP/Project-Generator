@@ -71,6 +71,12 @@ body {
     place-self: center;
 }
 
+.title {
+    font-size: 4rem; 
+    margin-bottom: 0px;
+    text-align: center;
+}
+
 h1, h4, p {
     margin: 1em auto;
     text-align: center;
