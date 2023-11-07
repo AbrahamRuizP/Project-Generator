@@ -7,15 +7,16 @@
     <title>Project Generator</title>
 </head>
 <body>
+    <br>
     <h1>Project Generator</h1>
-    
+    <br>
     <div class="Starting-Page">
         <h2>Select your project</h2>    
         
         <div>
         <!-- Current Values are placeholders -->
         <fieldset>
-            <label>Project Type</label>
+            <h3>Project Type</h3>
             <select id="Project-Type-Selector">
                 <option value="DDD-Arch">DDD Architecture</option>
                 <option value="Other">Other</option>
@@ -28,7 +29,6 @@
 
     <div class="DDD-Arch" style="display: none;"> 
     <p>Please fill out the entries with the required information:</p>
-    <h1 id="borrar"></h1>
     <form action="https://">
         <fieldset>
             <label for="project_name"> 
@@ -53,61 +53,61 @@
             <label for="files_to_genate" class="directory">
                 <ul class="second-depth">
                     <li>
-                        <input type="checkbox" name="application" id="application" checked> application
-                        <ul class="second-depth">
+                        <input type="checkbox" id="application" checked onclick="checkStatus(this.id)"> application
+                        <ul class="second-depth" id="childs_application">
+                            <li><input type="checkbox" id=""> no sé</li>
+                            <li><input type="checkbox" name=""> no sé</li>
+                            <li><input type="checkbox" name=""> no sé</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="db" id="db" checked onclick="checkStatus(this.id)"> db
+                        <ul class="second-depth" id="childs_db">
                             <li><input type="checkbox" name=""> no sé</li>
                             <li><input type="checkbox" name=""> no sé</li>
                             <li><input type="checkbox" name=""> no sé</li>
                         </ul>
                     </li>
                     <li>
-                        <input type="checkbox" name="db" id="db" checked> db
-                        <ul class="second-depth">
+                        <input type="checkbox" id="domain" checked onclick="checkStatus(this.id)"> domain
+                        <ul class="second-depth" id="childs_domain">
                             <li><input type="checkbox" name=""> no sé</li>
                             <li><input type="checkbox" name=""> no sé</li>
                             <li><input type="checkbox" name=""> no sé</li>
                         </ul>
                     </li>
                     <li>
-                        <input type="checkbox" name="domain" id="domain" checked> domain
-                        <ul class="second-depth">
-                            <li><input type="checkbox" name=""> no sé</li>
-                            <li><input type="checkbox" name=""> no sé</li>
-                            <li><input type="checkbox" name=""> no sé</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="extension" id="extension" checked> extension
-                        <ul class="second-depth">
+                        <input type="checkbox" name="extension" id="extension" checked onclick="checkStatus(this.id)"> extension
+                        <ul class="second-depth" id="childs_extension">
                             <li><input type="checkbox" name=""> no sé</li>
              
                         </ul>
                     </li>
                     <li>
-                        <input type="checkbox" name="graph" id="graph" checked> graph
-                        <ul class="second-depth">
+                        <input type="checkbox" id="graph" checked onclick="checkStatus(this.id)"> graph
+                        <ul class="second-depth" id="childs_graph">
                             <li><input type="checkbox" name=""> no sé</li>
                             <li><input type="checkbox" name=""> no sé</li>
                             <li><input type="checkbox" name=""> no sé</li>
                         </ul>
                     </li>
                     <li>
-                        <input type="checkbox" name="infrastructure" id="infrastructure" checked> infrastructure
-                        <ul class="second-depth">
+                        <input type="checkbox" id="infrastructure" checked onclick="checkStatus(this.id)"> infrastructure
+                        <ul class="second-depth" id="childs_infrastructure">
                             <li><input type="checkbox" name=""> no sé</li>
                             <li><input type="checkbox" name=""> no sé</li>
                             <li><input type="checkbox" name=""> no sé</li>
                         </ul>
                     </li>
                     <li>
-                        <input type="checkbox" name="server" id="server" checked> server
-                        <ul class="second-depth">
+                        <input type="checkbox" name="server" id="server" checked onclick="checkStatus(this.id)"> server
+                        <ul class="second-depth" id="childs_server">
                             <li><input type="checkbox" name=""> my-server.go</li>
                         </ul>
                     </li>
                     <li>
-                        <input type="checkbox" name="test" id="test" checked> test
-                        <ul class="second-depth">
+                        <input type="checkbox" id="test" checked onclick="checkStatus(this.id)"> test
+                        <ul class="second-depth" id="childs_test">
                             <li><input type="checkbox" name=""> no sé</li>
                         </ul>
                     </li>
