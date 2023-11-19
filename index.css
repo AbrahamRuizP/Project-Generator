@@ -45,18 +45,19 @@ body {
     font-size: 1.6rem;
 }
 
-.Starting-Page {
+.starting-page {
+    margin-top: 5rem;
     display: grid;
     place-content: center;
 }
 
-.Starting-Page div{
+.starting-page div{
     display: grid;
     margin: 0 auto;
     text-align: center;
 }
 
-.Starting-Page select{
+.starting-page select{
     border: 1px solid #0a0a23;
     border-radius: 5px;
     color: var(--color-background);
@@ -66,18 +67,23 @@ body {
     min-height: 2em;
 }
 
- .Starting-Page .button {
-    margin: 15px 0 0 0;
+ .starting-page .button {
+    margin: 1.5rem 0 0 0;
     place-self: center;
+}
+
+.DDD-Arch {
+    display: none;
+    margin-top: 5rem;
 }
 
 p.title {
     font-size: 4rem; 
-    margin-bottom: 0px;
+    margin: 8rem 0 0 0;
     text-align: center;
 }
 
-h1, h4, p {
+h1, h4, p.paragraph {
     margin: 1em auto;
     text-align: center;
 }
@@ -102,14 +108,14 @@ fieldset:last-of-type {
 
 label {
     display: block;
-    margin: 10px 0;
+    margin: 1rem 0;
 }
 
 input[type="text"] {
     background-color: #0a0a23;
     border: 1px solid #0a0a23;
     color: #ffffff;
-    margin: 12px 0 0 0;
+    margin: 1.2rem 0 0 0;
     width: 100%;
     min-height: 2em;
 }
@@ -118,7 +124,7 @@ input[type="checkbox"] {
     display: inline;
     height: 20px;
     width: 20px;
-    margin: 10px 0 0 0;
+    margin: 1rem 0 0 0;
     position: relative;
     vertical-align: middle;
     bottom: 6px;
@@ -126,13 +132,13 @@ input[type="checkbox"] {
 
 textarea {
     background-color: white;
-    margin: 10px 0 0 0;
+    margin: 1rem 0 0 0;
     width: 100%;
 }
 
 label.directory {
     background-color: var(--color-inputtext);
-    padding: 10px 0 15px 10px;
+    padding: 1rem 0 1.5rem 1rem;
 }
 
 ul {
@@ -161,4 +167,15 @@ ul.second-depth {
 
 .btn-container {
     text-align: center;
+}
+
+footer {
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: space-evenly;
+    height: 5%;
+}
+
+a {
+    text-decoration: none;
 }

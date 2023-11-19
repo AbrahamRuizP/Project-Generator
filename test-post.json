@@ -1,0 +1,94 @@
+{
+  "ProjectName": "Proyecto de ejemplo 40",
+  "GoMod": "gituhb.com/Daniel123",
+  "Entities": [
+        {
+          "EntityName": "User",
+          "Properties": [
+             {
+              "Name": "id",
+              "TypeName": "int"
+            },
+            {
+              "Name": "name",
+              "TypeName": "string"
+            },
+            {
+              "Name": "age",
+              "TypeName": "int"
+            }
+          ] },
+          {
+          "EntityName": "Product",
+          "Properties": [
+            {
+              "Name": "id",
+              "TypeName": "int"
+            },
+            {
+              "Name": "name",
+              "TypeName": "string"
+            },
+            {
+              "Name": "age",
+              "TypeName": "int"
+            }
+          ]}
+        
+      ],
+  "Applications": {
+    "FileName": "app.go",
+    "BlockName": "AppBlock",
+    "ModelName": "AppModel",
+    "DomainName": "AppDomain",
+    "FilterInputName": "AppFilterInput",
+    "InputName": "AppInput",
+    "NodeConnectionName": "AppNodeConnection",
+    "RepositoryName": "AppRepository",
+    "SaveInputName": "AppSaveInput",
+    "UpdateInputName": "AppUpdateInput"
+  },
+ 
+ "UnitTests": {
+    "FunctionName": "TestAppFunction",
+    "ExpectedResult": "true",
+    "Args": [
+      {
+        "PropertyName": "arg1",
+        "PropertyType": "string"
+      },
+      {
+        "PropertyName": "arg2",
+        "PropertyType": "int"
+      }
+    ]
+  },
+  "Graphs": {
+    "GraphFileName": "graph",
+    "BlockName": "GraphBlock",
+    "Properties": [
+      {
+        "Name": "prop1",
+        "TypeName": "string"
+      },
+      {
+        "Name": "prop2",
+        "TypeName": "int"
+      }
+    ]
+  },
+  "GormDB": {
+    "Table": "example_table",
+    "Username": "",
+    "Password": "",
+    "Host": "",
+    "Port": 5432,
+    "DbName": "",
+    "Properties": [
+      {
+        "Name": "",
+        "TypeName": ""
+      }
+    ]
+  }
+}

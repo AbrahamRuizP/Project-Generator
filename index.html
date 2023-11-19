@@ -7,13 +7,10 @@
     <title>Project Generator</title>
 </head>
 <body>
-    <br>
-    <br>
     <p class="title"> <strong> Project Generator </strong> </p>
     <h4> making your code easier </h4>
-    <br>
-    <br>
-    <div class="Starting-Page">
+
+    <section class="starting-page">
         <h2>Select your project type:</h2>    
         
         <div>
@@ -25,103 +22,131 @@
                 <option value="Other2">Other2</option>
             </select>
         </fieldset>
-        <button class="button"> <em>Start</em> </button>
+        <button class="button" id="start-button"> <em>Start</em> </button>
         </div>
-    </div>
+    </section>
 
-    <div class="DDD-Arch" style="display: none;"> 
-    <p>Please fill out the entries with the required information:</p>
-    <form action="https://">
+    <section class="DDD-Arch"> 
+    <p class="paragraph">Please fill out the entries with the required information:</p>
+    <form>
         <fieldset>
-            <label for="project_name"> 
+            <label for="project-name"> 
                 Enter the project name: 
-                <input type="text" name="project_name" id="project_name" minlength="1" maxlength="30" required>
+                <input type="text" id="project-name" minlength="1" maxlength="30" required>
             </label>
-            <!--
-            <label for="number_of_files">
-                How many files do you want to create?: 
-                <input type="number" name="number_of_files" id="number_of_files" min="1" max="10" required>
-            </label>
-            -->
         </fieldset>
         <fieldset>
             <label for="description">
                 Provide a description of your project:
-                <textarea id="description" name="description" rows="3" cols="30" placeholder="In this project..."></textarea>
+                <textarea id="project-description" rows="3" cols="30" placeholder="In this project..."></textarea>
             </label>
         </fieldset>
         <fieldset>
             Select the files that you want to create:
-            <label for="files_to_genate" class="directory">
+            <label for="files-to-genate" class="directory">
                 <ul class="second-depth">
                     <li>
                         <input type="checkbox" id="application" checked onclick="checkStatus(this.id)"> application
-                        <ul class="second-depth" id="childs_application">
-                            <li><input type="checkbox" id=""> no sé</li>
-                            <li><input type="checkbox" name=""> no sé</li>
-                            <li><input type="checkbox" name=""> no sé</li>
+                        <ul class="second-depth" id="childs-application">
+                            <li><input type="checkbox" id=""> myfile.go</li>
                         </ul>
                     </li>
                     <li>
-                        <input type="checkbox" name="db" id="db" checked onclick="checkStatus(this.id)"> db
-                        <ul class="second-depth" id="childs_db">
-                            <li><input type="checkbox" name=""> no sé</li>
-                            <li><input type="checkbox" name=""> no sé</li>
-                            <li><input type="checkbox" name=""> no sé</li>
+                        <input type="checkbox" id="db" checked onclick="checkStatus(this.id)"> db
+                        <ul class="second-depth" id="childs-db">
+                            <li><input type="checkbox" id=""> gorm.go</li>
+                            <li><input type="checkbox" id=""> sqlc.go</li>
                         </ul>
                     </li>
                     <li>
                         <input type="checkbox" id="domain" checked onclick="checkStatus(this.id)"> domain
-                        <ul class="second-depth" id="childs_domain">
-                            <li><input type="checkbox" name=""> no sé</li>
-                            <li><input type="checkbox" name=""> no sé</li>
-                            <li><input type="checkbox" name=""> no sé</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="extension" id="extension" checked onclick="checkStatus(this.id)"> extension
-                        <ul class="second-depth" id="childs_extension">
-                            <li><input type="checkbox" name=""> no sé</li>
-             
+                        <ul class="second-depth" id="childs-domain">
+                            <li>
+                                <input type="checkbox" id="entity" checked onclick="checkStatus(this.id)"> entity
+                                <ul class="second-depth" id="childs-entity">
+                                    <li><input type="checkbox" id=""> myfile.go</li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" id=""> models</li>
+                            <li><input type="checkbox" id=""> repository</li>
+                            <li>
+                                <input type="checkbox" id="templates" checked onclick="checkStatus(this.id)"> templates
+                                <ul class="second-depth" id="childs-templates" >
+                                    <li><input type="checkbox" id=""> application.tmpl</li>
+                                    <li><input type="checkbox" id=""> gin.tmpl</li>
+                                    <li><input type="checkbox" id=""> graphql.tmpl</li>
+                                    <li><input type="checkbox" id=""> gorm.tmpl</li>
+                                    <li><input type="checkbox" id=""> integration-test.tmpl</li>
+                                    <li><input type="checkbox" id=""> persistence.tmpl</li>
+                                    <li><input type="checkbox" id=""> sqlc.tmpl</li>
+                                    <li><input type="checkbox" id=""> struct.tmpl</li>
+                                    <li><input type="checkbox" id=""> unit-test.tmpl</li> 
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                     <li>
                         <input type="checkbox" id="graph" checked onclick="checkStatus(this.id)"> graph
-                        <ul class="second-depth" id="childs_graph">
-                            <li><input type="checkbox" name=""> no sé</li>
-                            <li><input type="checkbox" name=""> no sé</li>
-                            <li><input type="checkbox" name=""> no sé</li>
+                        <ul class="second-depth" id="childs-graph">
+                            <li><input type="checkbox" id=""> generated</li>
+                            <li><input type="checkbox" id=""> models</li>
+                            <li>
+                                <input type="checkbox" id="schema" checked onclick="checkStatus(this.id)"> schema
+                                <ul class="second-depth" id="childs-schema">
+                                    <li><input type="checkbox" id=""> graph.graphql</li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                     <li>
                         <input type="checkbox" id="infrastructure" checked onclick="checkStatus(this.id)"> infrastructure
-                        <ul class="second-depth" id="childs_infrastructure">
-                            <li><input type="checkbox" name=""> no sé</li>
-                            <li><input type="checkbox" name=""> no sé</li>
-                            <li><input type="checkbox" name=""> no sé</li>
+                        <ul class="second-depth" id="childs-infrastructure">
+                            <li>
+                                <input type="checkbox" id="persistence" checked onclick="checkStatus(this.id)"> persistence
+                                <ul class="second-depth" id="childs-persistence">
+                                    <li><input type="checkbox" id=""> persistence.go</li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                     <li>
-                        <input type="checkbox" name="server" id="server" checked onclick="checkStatus(this.id)"> server
-                        <ul class="second-depth" id="childs_server">
-                            <li><input type="checkbox" name=""> my-server.go</li>
+                        <input type="checkbox" id="server" checked onclick="checkStatus(this.id)"> server
+                        <ul class="second-depth" id="childs-server">
+                            <li><input type="checkbox" id=""> my-server.go</li>
                         </ul>
                     </li>
                     <li>
                         <input type="checkbox" id="test" checked onclick="checkStatus(this.id)"> test
-                        <ul class="second-depth" id="childs_test">
-                            <li><input type="checkbox" name=""> no sé</li>
+                        <ul class="second-depth" id="childs-test">
+                            <li><input type="checkbox" id=""> unit-test.go</li>
+                            <li><input type="checkbox" id=""> integration-test.go</li>
                         </ul>
                     </li>
                 </ul>
         </fieldset>
         <div class="btn-container">
-            <button class="button"><em>Generate</em> </button>
+            <button class="button" id="generate-project-button" type="button"> <em>Generate</em> </button>
         </div>
     </form>
-    </div>
+
+    <section class="download-preview" style="display: none;">
+        <!-- Mostrar lo que se va a descargar aqui 
+            si la API del Dani no la manda protestar -->
+        <h1>PREVIEW</h1>
+        <button class="button" id="download-project-button">Download Project</button>
+    </section>
 
     <script src="main.js"></script>
+
+    <footer id="footer">
+        <p>
+            **
+        </p>
+        <p>
+           ©<a href="https://" target="_blank">ACDCode</a> 2023
+        </p>
+    </footer>
+    </section>
     
 </body>
 </html>
